@@ -10,7 +10,7 @@ int main(){
     for (i=0; i<n;i++){
         cin>>shortarray[i];
     }
-
+   
     for(j=1;j<n;j++){
         key=shortarray[j];
         i=j-1;
@@ -40,7 +40,9 @@ int main(){
         }
         shortarray[i+1]=key;
     }
-    cout<<"Sorted value:"<<endl;
+    
+    cout<<"Sorted value:"<<'\n'<<endl;
+    
     for(i=0;i<n;i++)
         cout<<shortarray[i]<<" "<<endl;
     return 0;
